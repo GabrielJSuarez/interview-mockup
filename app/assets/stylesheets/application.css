@@ -25,3 +25,36 @@
 .dropdown-toggle::after {
     display: none;
 }
+
+.card-p {
+    margin-left: 2.1rem;
+}
+
+.card-icon {
+    font-size: 1.7rem;
+    color: #000000;
+}
+
+.add-account img {
+    width: 58px;
+    height: 58px;
+    margin: 19px 16px 20px 0;
+    border-radius: 21.8px;
+    background-color: #0fb2ab;
+    max-width: 100%;
+    }
+    span {
+        width: 40px;
+        font-size: 16px;
+        font-weight: 300;
+        color: #565682;
+    }
+    .add-user {
+        padding: 16px 17px 17px;
+        width: 58px;
+        height: 58px;
+        margin: 19px 16px 20px 0;
+        border-radius: 21.8px;
+        background-color: #0fb2ab;
+        max-width: 100%;
+}
