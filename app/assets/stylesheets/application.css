@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+
+.carousel-indicators [data-bs-target]{
+    width: 7px;
+    height: 7px;
+    margin: 0 10px 0 0;
+    background-color: #0fb2ab;
+    border-radius: 100%;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
