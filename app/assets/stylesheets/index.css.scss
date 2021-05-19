@@ -1,7 +1,6 @@
 $color-secondary: #9191af;
+$color-tertiary: #565682;
 
-
-$title-activity: #565682;
 $status-primary: #0fb269;
 $status-secondary: #c377f0;
 $date-activity: #c7cfe4;
@@ -9,6 +8,32 @@ $date-activity: #c7cfe4;
 body {
   background-color: #edeff4;
 }
+
+//---------------------------------------
+
+.navbrand-name {
+  font-size: 14px;
+}
+
+.fa-navbar {
+  font-size: 25px;
+  color: $color-tertiary;
+}
+
+.nav-menu {
+  margin-left: 5rem;
+}
+
+.bg-menu {
+  background-color: $color-tertiary;
+}
+
+.navbar-icons {
+  color: #ffffff;
+  font-size: 30px;
+}
+
+//----------------------------------------
 
 .carousel-indicators [data-bs-target]{
   width: 7px;
@@ -18,8 +43,60 @@ body {
   border-radius: 100%;
 }
 
+h1 {
+  font-size: 35px;
+  font-weight: 300;
+  color: $color-tertiary;
+}
+
 .dropdown-toggle::after {
   display: none;
+}
+
+.dropdown-date {
+  border-radius: 14.5px;
+
+  i, span {
+    color: $color-secondary;
+  }
+}
+
+//-------------------------------
+
+.dropdown-ellipsis {
+  color: $color-secondary;
+}
+
+.account-balance {
+  color: $color-secondary;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.acc-amount {
+  font-size: 26px;
+
+  span {
+    font-size: 14.5px;
+    color: $color-secondary;
+    font-weight: 300;
+  }
+}
+
+.acc-percent {
+ color: $status-primary;
+  font-size: 18px;
+  span {
+    color: $color-secondary;
+    font-size: 14.5px;
+    font-weight: 300;
+  }
+}
+//--------------------------------
+
+.account-title {
+  font-size: 22px;
+  color: $color-secondary;
 }
 
 .card-p {
@@ -30,26 +107,45 @@ body {
   font-size: 1.7rem;
   color: #000000;
 }
+.nomina-pill  {
+  color: #212145;
+  background-color: #c7cfe4;
+}
 
-.add-account img {
-  width: 58px;
-  height: 58px;
-  margin: 19px 16px 20px 0;
-  border-radius: 21.8px;
-  background-color: #0fb2ab;
-  max-width: 100%;
+
+//---------------------------------
+
+.send-money-title {
+  color: $color-secondary;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.add-account  {
+  img {
+    width: 58px;
+    height: 58px;
+    margin: 19px 16px 20px 0;
+    border-radius: 21.8px;
+    background-color: #0fb2ab;
+    max-width: 100%;
+  }
 
   span {
-    width: 40px;
-    font-size: 16px;
+    width: 75px;
+    font-size: 19px;
     font-weight: 300;
-    color: #565682;
+    a {
+      color: $color-tertiary;
+    }
+
   }
 
 }
 
 .add-user {
-  padding: 16px 17px 17px;
+  color: #ffffff;
+  padding: 13px 18px 17px;
   width: 58px;
   height: 58px;
   margin: 19px 16px 20px 0;
@@ -66,14 +162,14 @@ body {
     font-size: 22px;
     font-weight: 400;
   }
-  p {
+  span {
     color: #212145;
     background-color: #c7cfe4;
   }
 }
 
 .title-activity {
-  color: $title-activity;
+  color: $color-tertiary;
   font-weight: 300;
   font-size: 22px;
 }

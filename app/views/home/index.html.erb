@@ -1,50 +1,68 @@
-<div class="container-fluid">
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid px-0 d-flex align-items-center">
+    <a class="navbar-brand pb-3 ps-2" href="#">
+      <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top mt-1">
+      <span class="navbrand-name">Wallet.on</span>
+    </a>
+    <div class="nav-menu pe-2">
+      <a class="text-decoration-none text-dark" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+        <i class="fas fa-bars fa-navbar px-3"></i>
       </a>
-      <div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <i class="far fa-user-circle"></i>
-      </div>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
+
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+          </div>
+          <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
+    <button class="navbar-toggler rounded-circle py-2 px-2 me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="far fa-user-circle fa-navbar"></i>
+    </button>
 
+    <div class="collapse navbar-collapse bg-menu" id="navbarSupportedContent">
+      <div class="me-auto mb-2 mb-lg-0 d-flex justify-content-end align-items-center">
+        <i class="fas fa-search navbar-icons px-3"></i>
+        <i class="far fa-bell navbar-icons px-3"></i>
+        <div class="d-flex flex-wrap justify-content-between ms-2 add-account">
+          <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
   <!-- Title and Dropdown Query -->
   <section>
-
-    <h1>
+    <h1 class="py-4">
       Principal
     </h1>
 
-    <h3>
+    <h3 class="account-title my-3">
       BALANCES
     </h3>
 
     <!-- Dropdown -->
     <div class="dropdown d-flex justify-content-end">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-        Ver Semana
+      <button class="btn btn-light dropdown-toggle border dropdown-date" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="far fa-calendar-minus"></i> <span class="px-3">Ver Semana</span> <i class="fas fa-chevron-down"></i>
       </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
         <li><a class="dropdown-item" href="#">Action</a></li>
@@ -55,7 +73,7 @@
   </section>
 
   <!-- Carousel account state -->
-  <div id="carouselExampleIndicators" class="carousel slide pt-3" data-bs-ride="carousel">
+  <div id="carouselExampleIndicators" class="carousel slide pt-3 mb-4" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -63,13 +81,13 @@
     </div>
 
     <div class="">
-      <div class="carousel-inner pb-5">
+      <div class="carousel-inner pb-5  ">
         <div class="carousel-item active">
-          <div class="card mb-3" style="max-width: 18rem;">
-            <div class="bg-transparent d-flex justify-content-end p-2">
+          <div class="card mb-3 py-2" style="max-width: 18rem;">
+            <div class="bg-transparent d-flex justify-content-end p-2 pb-0">
               <div class="dropdown pe-2 ">
                 <button class="border-0 bg-transparent dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fas fa-ellipsis-h"></i>
+                  <i class="fas fa-ellipsis-h dropdown-ellipsis"></i>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                   <li><a class="dropdown-item" href="#">Action</a></li>
@@ -79,13 +97,13 @@
               </div>
             </div>
             <div class="card-body py-0">
-              <p class="mb-0'">DE89 3704 0044 0532 0130 00</p>
-              <div class="d-flex justify-content-between">
-                <p style="font-size: 26px;">
-                  2,560.50  <span style="font-size: 14.5px; color: #9191af;">EUR</span>
+              <p class="mb-0 account-balance">DE89 3704 0044 0532 0130 00</p>
+              <div class="d-flex justify-content-between pt-3">
+                <p class="acc-amount">
+                  2,560.50  <span>EUR</span>
                 </p>
-                <p class="d-flex flex-column mb-0" style="font-size: 16.9px; color: #0fb269;">
-                  +40% <span style="font-size: 14.5px; color: #9191af;">this week</span>
+                <p class="d-flex flex-column mb-0 acc-percent" >
+                  +40% <span>this week</span>
                 </p>
               </div>
               <div class="d-flex justify-content-center">
@@ -97,11 +115,11 @@
         </div>
 
         <div class="carousel-item">
-          <div class="card mb-3" style="max-width: 18rem;">
-            <div class="bg-transparent d-flex justify-content-end p-2">
+          <div class="card mb-3 py-2" style="max-width: 18rem;">
+            <div class="bg-transparent d-flex justify-content-end p-2 pb-0">
               <div class="dropdown pe-2 ">
                 <button class="border-0 bg-transparent dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fas fa-ellipsis-h"></i>
+                  <i class="fas fa-ellipsis-h dropdown-ellipsis"></i>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                   <li><a class="dropdown-item" href="#">Action</a></li>
@@ -111,13 +129,13 @@
               </div>
             </div>
             <div class="card-body py-0">
-              <p class="mb-0'">DE89 3704 0044 0532 0130 00</p>
-              <div class="d-flex justify-content-between">
-                <p style="font-size: 26px;">
-                  2,560.50  <span style="font-size: 14.5px; color: #9191af;">EUR</span>
+              <p class="mb-0 account-balance">DE89 3704 0044 0532 0130 00</p>
+              <div class="d-flex justify-content-between pt-3">
+                <p class="acc-amount">
+                  2,560.50  <span>EUR</span>
                 </p>
-                <p class="d-flex flex-column mb-0" style="font-size: 16.9px; color: #0fb269;">
-                  +40% <span style="font-size: 14.5px; color: #9191af;">this week</span>
+                <p class="d-flex flex-column mb-0 acc-percent" >
+                  +40% <span>this week</span>
                 </p>
               </div>
               <div class="d-flex justify-content-center">
@@ -129,11 +147,11 @@
         </div>
 
         <div class="carousel-item">
-          <div class="card mb-3" style="max-width: 18rem;">
-            <div class="bg-transparent d-flex justify-content-end p-2">
+          <div class="card mb-3 py-2" style="max-width: 18rem;">
+            <div class="bg-transparent d-flex justify-content-end p-2 pb-0">
               <div class="dropdown pe-2 ">
                 <button class="border-0 bg-transparent dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fas fa-ellipsis-h"></i>
+                  <i class="fas fa-ellipsis-h dropdown-ellipsis"></i>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                   <li><a class="dropdown-item" href="#">Action</a></li>
@@ -143,13 +161,13 @@
               </div>
             </div>
             <div class="card-body py-0">
-              <p class="mb-0'">DE89 3704 0044 0532 0130 00</p>
-              <div class="d-flex justify-content-between">
-                <p style="font-size: 26px;">
-                  2,560.50  <span style="font-size: 14.5px; color: #9191af;">EUR</span>
+              <p class="mb-0 account-balance">DE89 3704 0044 0532 0130 00</p>
+              <div class="d-flex justify-content-between pt-3">
+                <p class="acc-amount">
+                  2,560.50  <span>EUR</span>
                 </p>
-                <p class="d-flex flex-column mb-0" style="font-size: 16.9px; color: #0fb269;">
-                  +40% <span style="font-size: 14.5px; color: #9191af;">this week</span>
+                <p class="d-flex flex-column mb-0 acc-percent" >
+                  +40% <span>this week</span>
                 </p>
               </div>
               <div class="d-flex justify-content-center">
@@ -176,8 +194,8 @@
   </div>
 
   <!-- Accounts -->
-  <section>
-    <h3>
+  <section class="mb-5">
+    <h3 class="account-title pb-4 ms-3">
       MIS CUENTAS
     </h3>
 
@@ -204,18 +222,18 @@
       </button>
     </div>
 
-    <div class="d-flex justify-content-center mt-3">
-      <span class="badge rounded-pill bg-secondary py-1 px-3">Nómina</span>
+    <div class="d-flex justify-content-center mt-3 ">
+      <span class="mb-0 badge rounded-pill nomina-pill px-3">Nómina</span>
     </div>
   </section>
 
   <!-- send money -->
   <section>
-    <h4>
+    <h4 class="send-money-title ms-2">
       Enviar dinero
     </h4>
 
-    <div class="d-flex flex-wrap ms-2 add-account">
+    <div class="d-flex flex-wrap justify-content-between ms-2 add-account">
       <div class="add-user">
         <i class="fas fa-user-plus"></i>
       </div>
@@ -225,7 +243,9 @@
       <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
       <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
       <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-      <span class="pt-3 text-break">Ver todas</span>
+      <span class="pt-3 text-break">
+        <a href="#" class="text-decoration-none">Ver todas</a>
+      </span>
     </div>
   </section>
 
@@ -233,9 +253,10 @@
   <section class="account-activity mb-5 rounded">
     <!-- title -->
     <div class="d-flex justify-content-between p-4">
-      <div class="d-flex activity">
+      <div class="d-flex activity align-items-center">
         <h3 class="mb-0 me-2">Actividad</h3>
-        <p class="mb-0 badge rounded-pill pb-0 pt-1">Nómina</p>
+
+        <span class="mb-0 badge rounded-pill px-3">Nómina</span>
       </div>
 
       <div class="dropdown">
@@ -251,7 +272,7 @@
     </div>
 
     <!-- activity -->
-    <div class="container-fluid pt-5">
+    <div class="container-fluid pt-4">
       <div class="row">
         <div class="col-3">
           <div class="activity-icon rounded-circle text-center p-2 ">
