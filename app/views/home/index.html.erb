@@ -1,5 +1,25 @@
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light">
+
+<!-- Desktop -->
+<nav class="navbar navbar-expand-lg navbar-light d-none d-lg-block px-lg-5">
+  <div class="container-fluid d-flex justify-content-between px-0">
+    <a class="navbar-brand" href="#">Principal</a>
+
+    <div class="mb-2 mb-lg-0 d-flex align-items-center">
+      <i class="fas fa-search navbar-icons px-3"></i>
+      <div class="bell-notification">
+        <i class="far fa-bell navbar-icons px-3"></i>
+      </div>
+      <div class="d-flex flex-wrap align-items-center justify-content-between ms-2 add-account">
+        <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile -->
+<nav class="navbar navbar-expand-lg navbar-light d-md-none">
   <div class="container-fluid px-0 d-flex align-items-center">
     <a class="navbar-brand pb-3 ps-2" href="#">
       <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top mt-1">
@@ -109,32 +129,131 @@
   </div>
 </nav>
 
-<div class="container-fluid">
+<!-- Navigation end -->
+
+
+<div class="container-fluid px-lg-5">
   <!-- Title and Dropdown Query -->
   <section>
-    <h1 class="py-4">
+    <h1 class="py-4 d-md-none">
       Principal
     </h1>
 
-    <h3 class="account-title my-3">
-      BALANCES
-    </h3>
+    <div class="d-lg-flex justify-content-between">
+      <h3 class="account-title my-3">
+        BALANCES
+      </h3>
 
-    <!-- Dropdown -->
-    <div class="dropdown d-flex justify-content-end">
-      <button class="btn btn-light dropdown-toggle border dropdown-date" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-        <i class="far fa-calendar-minus"></i> <span class="px-3">Ver Semana</span> <i class="fas fa-chevron-down"></i>
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-      </ul>
+      <!-- Dropdown -->
+      <div class="dropdown d-flex justify-content-end">
+        <button class="btn btn-light dropdown-toggle border dropdown-date" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="far fa-calendar-minus"></i> <span class="px-3">Ver Semana</span> <i class="fas fa-chevron-down"></i>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <!-- Carousel account state -->
-  <div id="carouselExampleIndicators" class="carousel slide pt-3 mb-4" data-bs-ride="carousel">
+  <div class="d-none d-lg-block mt-4">
+    <div class="card-group d-flex justify-content-between">
+      <div class="card mb-3 py-2" style="max-width: 18rem;">
+        <div class="bg-transparent d-flex justify-content-end p-2 pb-0">
+          <div class="dropdown pe-2 ">
+            <button class="border-0 bg-transparent dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-ellipsis-h dropdown-ellipsis"></i>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-body py-0">
+          <p class="mb-0 account-balance">DE89 3704 0044 0532 0130 00</p>
+          <div class="d-flex justify-content-between pt-3">
+            <p class="acc-amount">
+              2,560.50  <span>EUR</span>
+            </p>
+            <p class="d-flex flex-column mb-0 acc-percent" >
+              +40% <span>this week</span>
+            </p>
+          </div>
+          <div class="d-flex justify-content-center">
+            <img src="https://image.shutterstock.com/image-vector/wavy-waving-line-zigzag-crisscross-260nw-1949138704.jpg" alt="" style="width: 258px;
+              height: 43px;">
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3 py-2" style="max-width: 18rem;">
+        <div class="bg-transparent d-flex justify-content-end p-2 pb-0">
+          <div class="dropdown pe-2 ">
+            <button class="border-0 bg-transparent dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-ellipsis-h dropdown-ellipsis"></i>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-body py-0">
+          <p class="mb-0 account-balance">DE89 3704 0044 0532 0130 00</p>
+          <div class="d-flex justify-content-between pt-3">
+            <p class="acc-amount">
+              2,560.50  <span>EUR</span>
+            </p>
+            <p class="d-flex flex-column mb-0 acc-percent" >
+              +40% <span>this week</span>
+            </p>
+          </div>
+          <div class="d-flex justify-content-center">
+            <img src="https://image.shutterstock.com/image-vector/wavy-waving-line-zigzag-crisscross-260nw-1949138704.jpg" alt="" style="width: 258px;
+              height: 43px;">
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3 py-2" style="max-width: 18rem;">
+        <div class="bg-transparent d-flex justify-content-end p-2 pb-0">
+          <div class="dropdown pe-2 ">
+            <button class="border-0 bg-transparent dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-ellipsis-h dropdown-ellipsis"></i>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-body py-0">
+          <p class="mb-0 account-balance">DE89 3704 0044 0532 0130 00</p>
+          <div class="d-flex justify-content-between pt-3">
+            <p class="acc-amount">
+              2,560.50  <span>EUR</span>
+            </p>
+            <p class="d-flex flex-column mb-0 acc-percent" >
+              +40% <span>this week</span>
+            </p>
+          </div>
+          <div class="d-flex justify-content-center">
+            <img src="https://image.shutterstock.com/image-vector/wavy-waving-line-zigzag-crisscross-260nw-1949138704.jpg" alt="" style="width: 258px;
+              height: 43px;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="carouselExampleIndicators" class="carousel slide pt-3 mb-4 d-md-none" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -255,154 +374,161 @@
   </div>
 
   <!-- Accounts -->
-  <section class="mb-5">
-    <h3 class="account-title pb-4 ms-3">
-      MIS CUENTAS
-    </h3>
+  <h3 class="account-title pb-4 ms-3">
+    MIS CUENTAS
+  </h3>
 
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner mx-auto">
-        <div class="carousel-item active ">
-          <img src="https://www.bankofthejames.bank/wp-content/uploads/2016/06/All-white-visa-logo-BOTJ-debit-1.png" class="w-75 card-p" alt="...">
+  <div class="row">
+    <div class="col-4">
+      <!-- Cards -->
+      <div class="mb-5">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner mx-auto">
+            <div class="carousel-item active ">
+              <img src="https://www.bankofthejames.bank/wp-content/uploads/2016/06/All-white-visa-logo-BOTJ-debit-1.png" class="w-75 card-p" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://www.bankofthejames.bank/wp-content/uploads/2016/06/All-white-visa-logo-BOTJ-debit-1.png" class="w-75 card-p" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://www.bankofthejames.bank/wp-content/uploads/2016/06/All-white-visa-logo-BOTJ-debit-1.png" class="w-75 card-p" alt="...">
+            </div>
+          </div>
+
+          <button class="carousel-control-prev me-5" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <i class="fas fa-chevron-left card-icon px-1" aria-hidden="true"></i>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <i class="fas fa-chevron-right card-icon px-1" aria-hidden="true"></i>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <div class="carousel-item">
-          <img src="https://www.bankofthejames.bank/wp-content/uploads/2016/06/All-white-visa-logo-BOTJ-debit-1.png" class="w-75 card-p" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="https://www.bankofthejames.bank/wp-content/uploads/2016/06/All-white-visa-logo-BOTJ-debit-1.png" class="w-75 card-p" alt="...">
+
+        <div class="d-flex justify-content-center mt-3 ">
+          <span class="mb-0 badge rounded-pill nomina-pill px-3">Nómina</span>
         </div>
       </div>
 
-      <button class="carousel-control-prev me-5" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-        <i class="fas fa-chevron-left card-icon px-1" aria-hidden="true"></i>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <i class="fas fa-chevron-right card-icon px-1" aria-hidden="true"></i>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+      <!-- send money -->
+      <div>
+        <h4 class="send-money-title ms-2">
+          Enviar dinero
+        </h4>
 
-    <div class="d-flex justify-content-center mt-3 ">
-      <span class="mb-0 badge rounded-pill nomina-pill px-3">Nómina</span>
-    </div>
-  </section>
-
-  <!-- send money -->
-  <section>
-    <h4 class="send-money-title ms-2">
-      Enviar dinero
-    </h4>
-
-    <div class="d-flex flex-wrap justify-content-between ms-2 add-account">
-      <div class="add-user">
-        <i class="fas fa-user-plus"></i>
-      </div>
-      <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-      <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-      <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-      <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-      <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-      <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-      <span class="pt-3 text-break">
-        <a href="#" class="text-decoration-none">Ver todas</a>
-      </span>
-    </div>
-  </section>
-
-  <!-- Account Activity -->
-  <section class="account-activity mb-5 rounded">
-    <!-- title -->
-    <div class="d-flex justify-content-between p-4">
-      <div class="d-flex activity align-items-center">
-        <h3 class="mb-0 me-2">Actividad</h3>
-
-        <span class="mb-0 badge rounded-pill px-3">Nómina</span>
-      </div>
-
-      <div class="dropdown">
-        <button class="dropdown-toggle border-0 rounded-circle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          <i class="fas fa-ellipsis-h pt-1"></i>
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
+        <div class="d-flex flex-wrap justify-content-between ms-2 add-account">
+          <div class="add-user">
+            <i class="fas fa-user-plus"></i>
+          </div>
+          <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+          <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+          <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+          <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+          <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+          <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+          <span class="pt-3 text-break">
+            <a href="#" class="text-decoration-none">Ver todas</a>
+          </span>
+        </div>
       </div>
     </div>
 
-    <!-- activity -->
-    <div class="container-fluid pt-4">
-      <div class="row">
-        <div class="col-3">
-          <div class="activity-icon rounded-circle text-center p-2 ">
-          <i class="fas fa-glass-martini-alt text-warning"></i>
+    <div class="col-8">
+      <!-- Account Activity -->
+      <div class="account-activity mb-5 rounded">
+        <!-- title -->
+        <div class="d-flex justify-content-between p-4">
+          <div class="d-flex activity align-items-center">
+            <h3 class="mb-0 me-2">Actividad</h3>
+
+            <span class="mb-0 badge rounded-pill px-3">Nómina</span>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropdown-toggle border-0 rounded-circle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-ellipsis-h pt-1"></i>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
           </div>
         </div>
-        <div class="col-9">
-          <h5 class="title-activity">Serv Einsten Pub - Piata Mica</h5>
-          <p class="mb-0 status-secondary">Pendiente</p>
-          <p class="mb-0 date">31 Abril 2021, 11:08 PM</p>
-          <p class="mb-0 title-activity">$120.00 MXN</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="container-fluid pt-5">
-      <div class="row">
-        <div class="col-3">
-          <div class="activity-icon rounded-circle text-center p-2 ">
-            <i class="fas fa-glass-martini-alt text-warning"></i>
+        <!-- activity -->
+        <div class="container-fluid pt-4">
+          <div class="row">
+            <div class="col-3">
+              <div class="activity-icon rounded-circle text-center p-2 ">
+              <i class="fas fa-glass-martini-alt text-warning"></i>
+              </div>
+            </div>
+            <div class="col-9">
+              <h5 class="title-activity">Serv Einsten Pub - Piata Mica</h5>
+              <p class="mb-0 status-secondary">Pendiente</p>
+              <p class="mb-0 date">31 Abril 2021, 11:08 PM</p>
+              <p class="mb-0 title-activity">$120.00 MXN</p>
+            </div>
           </div>
         </div>
-        <div class="col-9">
-          <h5 class="title-activity">Serv Einsten Pub - Piata Mica</h5>
-          <p class="mb-0 status-primary">Pendiente</p>
-          <p class="mb-0 date">31 Abril 2021, 11:08 PM</p>
-          <p class="mb-0 title-activity">$120.00 MXN</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="container-fluid pt-5">
-      <div class="row">
-        <div class="col-3">
-          <div class="activity-icon rounded-circle text-center p-2 ">
-            <i class="fas fa-glass-martini-alt text-warning"></i>
+        <div class="container-fluid pt-5">
+          <div class="row">
+            <div class="col-3">
+              <div class="activity-icon rounded-circle text-center p-2 ">
+                <i class="fas fa-glass-martini-alt text-warning"></i>
+              </div>
+            </div>
+            <div class="col-9">
+              <h5 class="title-activity">Serv Einsten Pub - Piata Mica</h5>
+              <p class="mb-0 status-primary">Pendiente</p>
+              <p class="mb-0 date">31 Abril 2021, 11:08 PM</p>
+              <p class="mb-0 title-activity">$120.00 MXN</p>
+            </div>
           </div>
         </div>
-        <div class="col-9">
-          <h5 class="title-activity">Serv Einsten Pub - Piata Mica</h5>
-          <p class="mb-0 status-primary">Pendiente</p>
-          <p class="mb-0 date">31 Abril 2021, 11:08 PM</p>
-          <p class="mb-0 title-activity">$120.00 MXN</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="container-fluid pt-5">
-      <div class="row">
-        <div class="col-3">
-          <div class="activity-icon rounded-circle text-center p-2 ">
-            <i class="fas fa-glass-martini-alt text-warning"></i>
+        <div class="container-fluid pt-5">
+          <div class="row">
+            <div class="col-3">
+              <div class="activity-icon rounded-circle text-center p-2 ">
+                <i class="fas fa-glass-martini-alt text-warning"></i>
+              </div>
+            </div>
+            <div class="col-9">
+              <h5 class="title-activity">Serv Einsten Pub - Piata Mica</h5>
+              <p class="mb-0 status-primary">Pendiente</p>
+              <p class="mb-0 date">31 Abril 2021, 11:08 PM</p>
+              <p class="mb-0 title-activity">$120.00 MXN</p>
+            </div>
           </div>
         </div>
-        <div class="col-9">
-          <h5 class="title-activity">Serv Einsten Pub - Piata Mica</h5>
-          <p class="mb-0 status-primary">Pendiente</p>
-          <p class="mb-0 date">31 Abril 2021, 11:08 PM</p>
-          <p class="mb-0 title-activity">$120.00 MXN</p>
+
+        <div class="container-fluid pt-5">
+          <div class="row">
+            <div class="col-3">
+              <div class="activity-icon rounded-circle text-center p-2 ">
+                <i class="fas fa-glass-martini-alt text-warning"></i>
+              </div>
+            </div>
+            <div class="col-9">
+              <h5 class="title-activity">Serv Einsten Pub - Piata Mica</h5>
+              <p class="mb-0 status-primary">Pendiente</p>
+              <p class="mb-0 date">31 Abril 2021, 11:08 PM</p>
+              <p class="mb-0 title-activity">$120.00 MXN</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- all movements -->
+
+        <div class="d-flex justify-content-center pt-5 ">
+          <button type="button" class="btn rounded border-top-0 activity-btn shadow px-4 py-2 mb-5 bg-body rounded title-activity ">
+            Ver todos los movimientos
+          </button>
         </div>
       </div>
     </div>
-
-    <!-- all movements -->
-
-    <div class="d-flex justify-content-center pt-5 ">
-      <button type="button" class="btn rounded border-top-0 activity-btn shadow px-4 py-2 mb-5 bg-body rounded title-activity ">
-        Ver todos los movimientos
-      </button>
-    </div>
-  </section>
+  </div>
 </div>
