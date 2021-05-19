@@ -11,24 +11,85 @@
       </a>
 
       <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <div>
-            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+        <div class="offcanvas-body px-0">
+          <ul class="list-group user-menu">
+            <li class="list-group-item border-0 d-flex align-items-center menu-selected me-3 ">
+              <a href="#" class="text-decoration-none ps-4">
+                <i class="fas fa-th-large pe-4"></i>
+                Principal
+              </a>
+            </li>
+
+            <li class="list-group-item border-0 d-flex align-items-center menu-selected me-3">
+              <a href="#" class="text-decoration-none ps-4">
+                <i class="fas fa-sort-numeric-up pe-4"></i>
+                Actividad
+              </a>
+              <div class="ps-2">
+                <span class="badge rounded-pill menu-alert py-2 px-2">14</span>
+              </div>
+            </li>
+
+            <li class="list-group-item border-0 d-flex align-items-center menu-selected me-3">
+              <a href="#" class="text-decoration-none ps-4">
+                <i class="fas fa-wallet pe-4"></i>
+                Balances
+              </a>
+            </li>
+
+            <li class="list-group-item border-0 d-flex align-items-center menu-selected me-3">
+              <a href="#" class="text-decoration-none ps-4">
+                <i class="fas fa-credit-card pe-4"></i>
+                Mis Cuentas
+              </a>
+            </li>
+
+            <li class="list-group-item border-0 d-flex align-items-center menu-selected me-3">
+              <a href="#" class="text-decoration-none ps-4">
+                <i class="fas fa-history pe-4"></i>
+                Historial
+              </a>
+            </li>
+
+            <li class="list-group-item border-0 d-flex align-items-center menu-selected me-3">
+              <a href="#" class="text-decoration-none ps-4">
+                <i class="fas fa-user-secret pe-4"></i>
+                Destinatarios
+              </a>
+            </li>
+
+            <li class="list-group-item border-0 d-flex align-items-center menu-selected me-3">
+              <a href="#" class="text-decoration-none ps-4">
+                <i class="fas fa-envelope-open pe-4"></i>
+                Invitar
+              </a>
+            </li>
+
+            <li class="list-group-item border-0 d-flex align-items-center menu-selected me-3">
+              <a href="#" class="text-decoration-none ps-4">
+                <i class="fas fa-cog pe-4"></i>
+                Configuraciòn
+              </a>
+            </li>
+
+          </ul>
+
+          <div class="fixed-bottom pb-3 ps-4">
+            <div class="">
+              <a href="#" type="button" class="btn rounded border-top-0 activity-btn shadow py-2 bg-body rounded title-activity align-items-center help-btn">
+                <i class="far fa-comment-dots pe-2"></i>
+                ¿Necesitas ayuda?
+              </a>
+            </div>
+
+            <div class=" pt-4 pb-2">
+              <a href="#" type="button" class="btn rounded border-top-0 activity-btn shadow py-2 bg-body rounded title-activity align-items-center close-btn">
+                <i class="fas fa-sign-out-alt pe-2"></i>
+                Cerrar sesión
+              </a>
+            </div>
           </div>
-          <div class="dropdown mt-3">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-              Dropdown button
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div>
+
         </div>
       </div>
     </div>
