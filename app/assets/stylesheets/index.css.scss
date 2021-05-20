@@ -20,7 +20,10 @@ body {
 
 .desktop-content {
   @media (min-width: 992px) {
-    margin-left: 16%;
+    margin-left: 17%;
+  }
+  @media (min-width: 1440px) {
+    margin-left: 25%;
   }
 }
 
@@ -204,9 +207,13 @@ h1 {
 
 .account-card {
   height: 13rem;
-  max-width: 600px;
+  max-width: 500px;
 
   @media (min-width: 992px) {
+    max-width: 250px;
+  }
+
+  @media (min-width: 1024px) {
     max-width: 400px;
   }
 
@@ -285,6 +292,34 @@ h1 {
   @media (min-width: 768px) {
     padding-left: 6rem;
     padding-right: 6rem;
+  }
+  @media (min-width: 992px) {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+  @media (min-width: 1440px) {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-button-left {
+    padding-left: 8rem;
+  }
+
+  .card-button-right {
+    padding-right: 8rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .card-button-left {
+    padding-left: 0;
+  }
+
+  .card-button-right {
+    padding-right: 0;
   }
 }
 
