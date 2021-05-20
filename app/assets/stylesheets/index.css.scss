@@ -9,6 +9,21 @@ body {
   background-color: #edeff4;
 }
 
+.desktop-menu {
+  height: 100vh;
+  position: fixed;
+  background-color: $date-activity;
+  .flex-column {
+    height: 100vh;
+  }
+}
+
+.desktop-content {
+  @media (min-width: 992px) {
+    margin-left: 16%;
+  }
+}
+
 //---------------------------------------
 
 .navbrand-name {
@@ -20,17 +35,13 @@ body {
   color: $color-tertiary;
 }
 
-.nav-menu {
-  margin-left: 5rem;
-}
-
 .bg-menu {
   background-color: $color-tertiary;
 }
 
 .navbar-icons {
   color: #ffffff;
-  font-size: 30px;
+  font-size: 27px;
 
   @media (min-width: 992px) {
   color: $color-tertiary;
@@ -78,7 +89,27 @@ body {
   width: 320px;
 }
 
+.menu-brand {
+  font-size: 1rem;
+  span {
+    color: #0fb2ab!important;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 1.2rem!important;
+    font-weight: bolder;
+    i {
+      font-size: 2rem!important;
+      color: #0fb2ab!important;
+    }
+    span {
+      color: #0fb2ab!important;
+    }
+  }
+}
+
 .menu-selected:hover {
+  max-width: 90%;
   transition: 0.75s;
   opacity: 0.7;
   border-top-right-radius: 19.4px;
@@ -86,24 +117,15 @@ body {
   background-color: #eef2f6;
   a {
     transition: 0.75s;
-    color: #0fb2ab;
+    color: #0fb2ab!important;
+    i {
+      color: #0fb2ab!important;
+    }
   }
 }
 
 .menu-selected a i {
   color: #a1a2bc;;
-}
-
-.menu-selected:active {
-  transition: 0.75s;
-  opacity: 0.7;
-  border-top-right-radius: 19.4px;
-  border-bottom-right-radius: 19.4px;
-  background-color: #eef2f6;
-  a {
-    transition: 0.75s;
-    color: #0fb2ab;
-  }
 }
 
 .help-btn {
@@ -127,6 +149,12 @@ h1 {
   font-size: 35px;
   font-weight: 300;
   color: $color-tertiary;
+
+  @media (min-width: 992px) {
+    font-size: 29px;
+    font-weight: 300;
+    color: $color-tertiary;
+  }
 }
 
 .dropdown-toggle::after {
@@ -174,6 +202,16 @@ h1 {
 }
 //--------------------------------
 
+.account-card {
+  height: 13rem;
+  max-width: 600px;
+
+  @media (min-width: 992px) {
+    max-width: 400px;
+  }
+
+}
+
 .account-title {
   font-size: 22px;
   color: $color-secondary;
@@ -181,6 +219,10 @@ h1 {
 
 .card-p {
   margin-left: 2.1rem;
+
+  @media (min-width: 992px) {
+    margin-left: 2.5rem;
+  }
 }
 
 .card-icon {
@@ -236,6 +278,18 @@ h1 {
 
 //--------------------------
 
+.card-image {
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  @media (min-width: 768px) {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+//--------------------------
+
 .activity {
   h3 {
     color: $color-secondary;
@@ -251,7 +305,7 @@ h1 {
 .title-activity {
   color: $color-tertiary;
   font-weight: 300;
-  font-size: 22px;
+  font-size: 17px;
 }
 
 .account-activity {
@@ -260,7 +314,7 @@ h1 {
 
 .status-secondary {
   color: $status-secondary;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .status-primary {
@@ -270,10 +324,11 @@ h1 {
 
 .date {
   color: $date-activity;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .activity-icon {
+  width: 50px;
   background-color: #f1f3f8;
 }
 
