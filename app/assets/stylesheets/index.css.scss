@@ -27,6 +27,18 @@ body {
   }
 }
 
+.toggle-button {
+  position: absolute;
+  z-index: 1000;
+  left: 340px;
+  top: 55px;
+  background-color: #212145;
+  transform: rotate(-90deg);
+  i {
+    background-color: #9191af;
+  }
+}
+
 //---------------------------------------
 
 .navbrand-name {
@@ -132,7 +144,7 @@ body {
 }
 
 .help-btn {
-  padding-right: 2.5rem;
+  padding-right: 3rem;
 }
 
 .close-btn {
@@ -154,7 +166,7 @@ h1 {
   color: $color-tertiary;
 
   @media (min-width: 992px) {
-    font-size: 29px;
+    font-size: 29px!important;
     font-weight: 300;
     color: $color-tertiary;
   }
@@ -168,6 +180,7 @@ h1 {
   border-radius: 14.5px;
 
   i, span {
+    font-size: 18px;
     color: $color-secondary;
   }
 }
@@ -180,12 +193,12 @@ h1 {
 
 .account-balance {
   color: $color-secondary;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 300;
 }
 
 .acc-amount {
-  font-size: 26px;
+  font-size: 36px;
 
   span {
     font-size: 14.5px;
@@ -196,7 +209,7 @@ h1 {
 
 .acc-percent {
  color: $status-primary;
-  font-size: 18px;
+  font-size: 17px;
   span {
     color: $color-secondary;
     font-size: 14.5px;
@@ -220,7 +233,7 @@ h1 {
 }
 
 .account-title {
-  font-size: 22px;
+  font-size: 18px;
   color: $color-secondary;
 }
 
@@ -246,7 +259,7 @@ h1 {
 
 .send-money-title {
   color: $color-secondary;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: normal;
 }
 
@@ -281,6 +294,15 @@ h1 {
   border-radius: 21.8px;
   background-color: #0fb2ab;
   max-width: 100%;
+}
+
+.see-all {
+  color: $color-tertiary;
+  font-size: 16px;
+}
+
+.see-all:hover {
+  text-decoration: underline;
 }
 
 //--------------------------
@@ -328,10 +350,12 @@ h1 {
 .activity {
   h3 {
     color: $color-secondary;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 400;
   }
   span {
+    font-size: 14.5px;
+    font-weight: light;
     color: #212145;
     background-color: #c7cfe4;
   }
@@ -369,5 +393,5 @@ h1 {
 
 .activity-btn {
   background-color: #f1f3f8;
-  font-size: 18px;
+  font-size: 16px;
 }
