@@ -13,7 +13,7 @@ h1 {
   color: $color-tertiary;
 
   @media (min-width: 992px) {
-    font-size: 29px!important;
+    font-size: 29px !important;
   }
 }
 
@@ -55,6 +55,7 @@ h1 {
 .acc-percent {
   color: $status-primary;
   font-size: $font-size-16;
+
   span {
     color: $color-secondary;
     font-size: $font-size-14;
@@ -62,7 +63,7 @@ h1 {
   }
 }
 
-.nomina-pill  {
+.nomina-pill {
   color: $color-dark;
   background-color: $color-light;
 }
@@ -76,8 +77,9 @@ h1 {
 }
 
 .add-user {
-  color: #ffffff;
+  color: #fff;
   padding: 13px 18px 17px;
+
   @include image_preview;
 }
 
@@ -104,6 +106,7 @@ h1 {
     font-size: $font-size-18;
     font-weight: 400;
   }
+
   span {
     font-size: $font-size-14;
     font-weight: normal;
