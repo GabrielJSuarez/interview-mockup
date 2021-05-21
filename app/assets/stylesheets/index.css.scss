@@ -27,7 +27,19 @@ body {
   }
 }
 
-.toggle-button {
+.toggle-button-icon {
+  position: absolute;
+  z-index: 1000;
+  left: 220px;
+  top: 55px;
+  background-color: #212145;
+  transform: rotate(-90deg);
+  i {
+    background-color: #9191af;
+  }
+}
+
+.toggle-button-menu {
   position: absolute;
   z-index: 1000;
   left: 340px;
@@ -38,6 +50,7 @@ body {
     background-color: #9191af;
   }
 }
+
 
 //---------------------------------------
 

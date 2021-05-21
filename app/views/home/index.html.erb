@@ -1,6 +1,10 @@
 <div class="container-fluid px-0">
   <!-- Desktop Menu -->
-  <div class="col-xl-2 col-lg-2 d-none d-lg-block px-lg-0 desktop-menu">
+  <div id="iconMenu" class="col-xl-2 col-lg-2 d-none d-lg-block d-xl-none px-lg-0 desktop-menu">
+    <button onclick="hideMenu()" class="toggle-button-icon rounded-circle">
+      <i class="fas fa-bars"></i>
+    </button>
+
     <div class="d-flex flex-column justify-content-between">
       <!-- Menu -->
       <ul class="list-group user-menu pt-4">
@@ -81,8 +85,8 @@
   </div>
 
   <!-- Large Desktop Menu -->
-  <div class="col-xl-3 col-lg-3 d-none d-xl-block px-lg-0 desktop-menu">
-    <button class="toggle-button rounded-circle">
+  <div id="fullMenu" class="col-xl-3 col-lg-3 d-none d-xl-block px-lg-0 desktop-menu">
+    <button onclick="hideMenu()" class="toggle-button-menu rounded-circle">
       <i class="fas fa-bars"></i>
     </button>
 
@@ -752,3 +756,12 @@
     </div>
   </div>
 </div>
+
+<script type="text/javascript" charset="utf-8">
+    function hideMenu() {
+        var icon = document.getElementById("iconMenu");
+        var full = document.getElementById(("fullMenu"))
+        icon.classList.toggle("d-xl-none")
+        full.classList.toggle("d-xl-block");
+    }
+</script>
