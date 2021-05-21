@@ -5,6 +5,9 @@ $status-primary: #0fb269;
 $status-secondary: #c377f0;
 $date-activity: #c7cfe4;
 
+
+$border-rounded: 14.5px;
+
 body {
   background-color: #edeff4;
 }
@@ -103,6 +106,12 @@ body {
     right: 40px;
   }
 
+}
+
+.user-menu-large {
+  @media (min-width: 1920px) {
+    padding-left: 3rem;
+  }
 }
 
 .user-menu li a {
@@ -210,6 +219,11 @@ h1 {
 
 //-------------------------------
 
+.dropdown-menu {
+  border-radius: $border-rounded;
+  margin-top: 1rem!important;
+}
+
 .dropdown-ellipsis {
   color: $color-secondary;
 }
@@ -245,12 +259,16 @@ h1 {
   height: 13rem;
   max-width: 500px;
 
-  @media (min-width: 992px) {
-    max-width: 400px;
+  @media (min-width: 1024px) {
+    width: 20rem;
   }
 
-  @media (min-width: 1024px) {
-    max-width: 400px;
+  @media (min-width: 1440px) {
+    width: 17rem;
+  }
+
+  @media (min-width: 1920px) {
+    width: 22rem;
   }
 
 }
@@ -342,9 +360,19 @@ h1 {
     padding-left: 10rem;
     padding-right: 10rem;
   }
+
+  @media (min-width: 1200px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   @media (min-width: 1440px) {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+  @media (min-width: 1920px) {
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
   }
 }
 
@@ -358,13 +386,13 @@ h1 {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .card-button-left {
-    padding-left: 0;
+    padding-left: 0rem;
   }
 
   .card-button-right {
-    padding-right: 0;
+    padding-right: 0rem;
   }
 }
 
