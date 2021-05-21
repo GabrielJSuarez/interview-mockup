@@ -1,0 +1,494 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+//-------------------------
+
+// VARIABLES
+
+$color-primary: #0fb2ab!important;
+$color-secondary: #9191af;
+$color-tertiary: #565682;
+
+$status-primary: #0fb269;
+$status-secondary: #c377f0;
+$date-activity: #c7cfe4;
+
+$border-rounded: 14.5px;
+
+//--------------------------
+
+// GLOBALS
+
+body {
+  background-color: #edeff4;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: 300;
+  color: $color-tertiary;
+
+  @media (min-width: 992px) {
+    font-size: 29px!important;
+    font-weight: 300;
+    color: $color-tertiary;
+  }
+}
+
+//---------------------------
+
+// MOBILE STYLES
+
+//---------------------------
+
+// Modify size and color of navbrand
+
+.menu-brand {
+  font-size: 1rem;
+  span {
+    color: $color-primary;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 1.2rem!important;
+    font-weight: bolder;
+    i {
+      font-size: 2rem!important;
+      color: $color-primary;
+    }
+    span {
+      color: $color-primary;
+    }
+  }
+}
+
+//-------------------------------------
+
+// Styles of Offcanvas Menu for mobile
+
+.offcanvas-start {
+  width: 275px;
+  @media (min-width: 360px) {
+    width: 320px;
+  }
+}
+
+.offcanvas-body, .list-group-item, .offcanvas-header {
+  background-color: $date-activity;
+}
+
+.user-menu li a {
+  color: $color-tertiary;
+  font-size: 18px;
+  i {
+    font-size: 25px;
+  }
+}
+
+.menu-selected:hover {
+  max-width: 90%;
+  transition: 0.75s;
+  opacity: 0.7;
+  border-top-right-radius: 19.4px;
+  border-bottom-right-radius: 19.4px;
+  background-color: #eef2f6;
+  a {
+    transition: 0.75s;
+    color: #0fb2ab!important;
+    i {
+      color: #0fb2ab!important;
+    }
+  }
+}
+
+.menu-selected a i {
+  color: #a1a2bc;;
+}
+
+.title-activity {
+  color: $color-tertiary;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+.activity-btn {
+  background-color: #f1f3f8;
+  font-size: 16px;
+}
+
+.help-btn {
+  padding-right: 3rem;
+}
+
+.close-btn {
+  padding-right: 4.5rem;
+}
+
+//---------------------------------
+
+// Account actions styles
+
+.fa-navbar {
+  font-size: 25px;
+  color: $color-tertiary;
+}
+
+.bg-menu {
+  background-color: $color-tertiary;
+}
+
+.navbar-icons {
+  color: #ffffff;
+  font-size: 27px;
+
+  @media (min-width: 992px) {
+    color: $color-tertiary;
+  }
+}
+
+.bell-notification::after {
+  top: -20px;
+  right: 15px;
+  position: relative;
+  content: "4";
+  font-size: 16px;
+  width: 24px;
+  height: 24px;
+  padding: 2px 8px 5px 7px;
+  border-radius: 9.7px;
+  background-image: linear-gradient(135deg, #f38282, #e35f4b);
+
+  @media (min-width: 992px) {
+    top: -23px;
+    right: 40px;
+  }
+}
+
+.add-account {
+  img {
+    width: 58px;
+    height: 58px;
+    margin: 19px 16px 20px 0;
+    border-radius: 21.8px;
+    background-color: #0fb2ab;
+    max-width: 100%;
+  }
+
+  span {
+    width: 75px;
+    font-size: 19px;
+    font-weight: 300;
+    a {
+      color: $color-tertiary;
+    }
+  }
+}
+
+//---------------------------------------
+
+// Desktop Menu
+
+.menu-alert {
+  font-size: 14px;
+  border-radius: 9.7px;
+  background-image: linear-gradient(324deg, #212145 95%, #565682 13%);
+}
+
+.desktop-menu {
+  height: 100vh;
+  position: fixed;
+  background-color: $date-activity;
+  transition: 0.90s;
+  .flex-column {
+    height: 100vh;
+  }
+}
+
+.desktop-content-menu {
+  @media (min-width: 992px) {
+    margin-left: 25%;
+    transition: 0.75s;
+  }
+}
+
+//-----------------------------------
+
+// Toggle between menus button
+
+.toggle-button-icon {
+  position: relative;
+  z-index: 1000;
+  left: -61px;
+  top: -80px;
+  background-color: #212145;
+  transform: rotate(-90deg);
+  i {
+    background-color: #9191af;
+  }
+
+  @media (min-width: 1440px) {
+    left: -50px;
+  }
+}
+
+//---------------------------------
+
+// Large Desktop Menu
+
+.user-menu-large {
+  @media (min-width: 1920px) {
+    padding-left: 3rem;
+  }
+}
+
+//---------------------------------------
+
+// MAIN CONTENT
+
+//------------------------------------------
+
+//  Account Options navbar
+
+.desktop-content-icon {
+  @media (min-width: 992px) {
+    margin-left: 16.5%;
+    transition: 0.75s;
+  }
+}
+
+//-------------------------------
+
+// Balance and date picker
+
+.account-title {
+  font-size: 18px;
+  color: $color-secondary;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-date {
+  border-radius: 14.5px;
+
+  i, span {
+    font-size: 18px;
+    color: $color-secondary;
+  }
+}
+
+.dropdown-menu {
+  border-radius: $border-rounded;
+  margin-top: 1rem!important;
+}
+
+//------------------------------------
+
+// Account State Mobile
+
+.account-card {
+  height: 13rem;
+  max-width: 500px;
+
+  @media (min-width: 1024px) {
+    width: 20rem;
+  }
+
+  @media (min-width: 1440px) {
+    width: 16rem;
+  }
+
+  @media (min-width: 1920px) {
+    width: 22rem;
+  }
+}
+
+.dropdown-ellipsis {
+  color: $color-secondary;
+}
+
+.account-balance {
+  color: $color-secondary;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.acc-amount {
+  font-size: 36px;
+
+  span {
+    font-size: 14.5px;
+    color: $color-secondary;
+    font-weight: 300;
+  }
+}
+
+.acc-percent {
+  color: $status-primary;
+  font-size: 17px;
+  span {
+    color: $color-secondary;
+    font-size: 14.5px;
+    font-weight: 300;
+  }
+}
+
+//-------------------------------
+
+// ACCOUNTS CARDS
+
+.carousel-indicators [data-bs-target]{
+  width: 7px;
+  height: 7px;
+  margin: 0 10px 0 0;
+  background-color: #0fb2ab;
+  border-radius: 100%;
+}
+
+.card-image {
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  @media (min-width: 768px) {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  @media (min-width: 992px) {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  @media (min-width: 1200px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  @media (min-width: 1440px) {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  @media (min-width: 1920px) {
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+  }
+}
+
+.card-button-left {
+  @media (min-width: 992px) {
+    padding-left: 8rem;
+  }
+  @media (min-width: 1200px) {
+    padding-left: 0rem;
+  }
+}
+
+.card-button-right {
+  @media (min-width: 992px) {
+    padding-right: 8rem;
+  }
+  @media (min-width: 1200px) {
+    padding-right: 0rem;
+  }
+}
+
+.card-icon {
+  font-size: 1.7rem;
+  color: #000000;
+}
+
+.nomina-pill  {
+  color: #212145;
+  background-color: #c7cfe4;
+}
+
+//-------------------------------
+
+// SEND MONEY
+
+.send-money-title {
+  color: $color-secondary;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.add-user {
+  color: #ffffff;
+  padding: 13px 18px 17px;
+  width: 58px;
+  height: 58px;
+  margin: 19px 16px 20px 0;
+  border-radius: 21.8px;
+  background-color: #0fb2ab;
+  max-width: 100%;
+}
+
+.see-all {
+  color: $color-tertiary;
+  font-size: 16px;
+}
+
+.see-all:hover {
+  text-decoration: underline;
+}
+
+//----------------------------------
+
+// ACCOUNT ACTIVITY
+
+.account-activity {
+  background-color: #fff;
+}
+
+.activity {
+  h3 {
+    color: $color-secondary;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  span {
+    font-size: 14.5px;
+    font-weight: light;
+    color: #212145;
+    background-color: #c7cfe4;
+  }
+}
+
+.activity-icon {
+  width: 50px;
+  background-color: #f1f3f8;
+}
+
+.status-secondary {
+  color: $status-secondary;
+  font-size: 14px;
+}
+
+.status-primary {
+  color: $status-primary;
+  font-size: 18px;
+}
+
+.date {
+  color: $date-activity;
+  font-size: 14px;
+}
+
+
+
+
+
+
