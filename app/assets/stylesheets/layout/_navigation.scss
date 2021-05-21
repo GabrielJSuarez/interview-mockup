@@ -1,0 +1,78 @@
+@import "abstracts/variables";
+
+@import "abstracts/mixins";
+
+// MOBILE STYLES
+
+//---------------------------
+
+// Modify size and color of navbrand
+
+.menu-brand {
+  font-size: 1rem;
+  span {
+    color: $color-primary;
+  }
+
+  @media (min-width: $media-lg) {
+    font-size: 1.2rem!important;
+    font-weight: bolder;
+    i {
+      font-size: 2rem!important;
+      color: $color-primary;
+    }
+  }
+}
+
+// Account actions styles
+
+.fa-navbar {
+  font-size: 25px;
+  color: $color-tertiary;
+}
+
+.bg-menu {
+  background-color: $color-tertiary;
+}
+
+.navbar-icons {
+  color: #ffffff;
+  font-size: 27px;
+
+  @media (min-width: $media-lg) {
+    color: $color-tertiary;
+  }
+}
+
+.bell-notification::after {
+  top: -20px;
+  right: 15px;
+  position: relative;
+  content: "4";
+  font-size: $font-size-16;
+  width: 24px;
+  height: 24px;
+  padding: 2px 8px 5px 7px;
+  border-radius: 9.7px;
+  background-image: linear-gradient(135deg, #f38282, #e35f4b);
+
+  @media (min-width: $media-lg) {
+    top: -23px;
+    right: 40px;
+  }
+}
+
+.add-account {
+  img {
+    @include image_preview
+  }
+
+  span {
+    width: 75px;
+    font-size: 19px;
+    font-weight: $font-weight-light;
+    a {
+      color: $color-tertiary;
+    }
+  }
+}

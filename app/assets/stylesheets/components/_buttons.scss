@@ -1,0 +1,32 @@
+@import "abstracts/variables";
+
+.activity-btn {
+  background-color: $status-terciary;
+  font-size: $font-size-16;
+}
+
+.help-btn {
+  padding-right: 3rem;
+}
+
+.close-btn {
+  padding-right: 4.5rem;
+}
+
+// Toggle between menus button
+
+.toggle-button-icon {
+  position: relative;
+  z-index: 1000;
+  left: -61px;
+  top: -80px;
+  background-color: $color-dark;
+  transform: rotate(-90deg);
+  i {
+    background-color: $color-secondary;
+  }
+
+  @media (min-width: $media-xxl) {
+    left: -50px;
+  }
+}

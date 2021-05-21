@@ -1,0 +1,25 @@
+@import "abstracts/variables";
+
+// Balance and date picker
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-date {
+  border-radius: 14.5px;
+
+  i, span {
+    font-size: $font-size-18;
+    color: $color-secondary;
+  }
+}
+
+.dropdown-menu {
+  border-radius: $border-rounded;
+  margin-top: 1rem!important;
+}
+
+.dropdown-ellipsis {
+  color: $color-secondary;
+}

@@ -1,0 +1,12 @@
+@import "variables";
+
+// MIXINS
+
+@mixin image_preview {
+  width: 58px;
+  height: 58px;
+  margin: 19px 16px 20px 0;
+  border-radius: 21.8px;
+  background-color: $color-primary;
+  max-width: 100%;
+}

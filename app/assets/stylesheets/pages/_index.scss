@@ -1,0 +1,133 @@
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+// GLOBALS
+
+body {
+  background-color: #edeff4;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: $font-weight-light;
+  color: $color-tertiary;
+
+  @media (min-width: 992px) {
+    font-size: 29px!important;
+  }
+}
+
+// Account State Mobile
+
+.account-card {
+  height: 13rem;
+  max-width: 500px;
+
+  @media (min-width: 1024px) {
+    width: 20rem;
+  }
+
+  @media (min-width: 1440px) {
+    width: 16rem;
+  }
+
+  @media (min-width: 1920px) {
+    width: 22rem;
+  }
+}
+
+.account-balance {
+  color: $color-secondary;
+  font-size: $font-size-16;
+  font-weight: $font-weight-light;
+}
+
+.acc-amount {
+  font-size: 36px;
+
+  span {
+    font-size: $font-size-14;
+    color: $color-secondary;
+    font-weight: $font-weight-light;
+  }
+}
+
+.acc-percent {
+  color: $status-primary;
+  font-size: $font-size-16;
+  span {
+    color: $color-secondary;
+    font-size: $font-size-14;
+    font-weight: $font-weight-light;
+  }
+}
+
+.nomina-pill  {
+  color: $color-dark;
+  background-color: $color-light;
+}
+
+// SEND MONEY
+
+.send-money-title {
+  color: $color-secondary;
+  font-size: $font-size-18;
+  font-weight: normal;
+}
+
+.add-user {
+  color: #ffffff;
+  padding: 13px 18px 17px;
+  @include image_preview;
+}
+
+.see-all {
+  color: $color-tertiary;
+  font-size: $font-size-16;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+//----------------------------------
+
+// ACCOUNT ACTIVITY
+
+.account-activity {
+  background-color: #fff;
+}
+
+.activity {
+  h3 {
+    color: $color-secondary;
+    font-size: $font-size-18;
+    font-weight: 400;
+  }
+  span {
+    font-size: $font-size-14;
+    font-weight: normal;
+    color: $color-dark;
+    background-color: $color-light;
+  }
+}
+
+.activity-icon {
+  width: 50px;
+  background-color: #f1f3f8;
+}
+
+.status-secondary {
+  color: $status-secondary;
+  font-size: $font-size-14;
+}
+
+.status-primary {
+  color: $status-primary;
+  font-size: $font-size-18;
+}
+
+.date {
+  color: $color-light;
+  font-size: $font-size-14;
+}

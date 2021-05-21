@@ -1,0 +1,93 @@
+@import "abstracts/variables";
+
+// Styles of Offcanvas Menu for mobile
+
+.offcanvas-start {
+  width: 275px;
+  @media (min-width: $media-xs) {
+    width: 320px;
+  }
+}
+
+.offcanvas-body, .list-group-item, .offcanvas-header {
+  background-color: $color-light;
+}
+
+.user-menu li a {
+  color: $color-tertiary;
+  font-size: $font-size-18;
+  i {
+    font-size: 25px;
+  }
+}
+
+.menu-selected:hover {
+  max-width: 90%;
+  transition: 0.75s;
+  opacity: 0.7;
+  border-top-right-radius: 19.4px;
+  border-bottom-right-radius: 19.4px;
+  background-color: #eef2f6;
+  a {
+    transition: 0.75s;
+    color: $color-primary;
+    i {
+      color: $color-primary;
+    }
+  }
+}
+
+.menu-selected a i {
+  color: #a1a2bc;
+}
+
+.title-activity {
+  color: $color-tertiary;
+  font-weight: $font-weight-light;
+  font-size: $font-size-16;
+}
+
+// Desktop Menu
+
+.menu-alert {
+  font-size: $font-size-14;
+  border-radius: 9.7px;
+  background-image: linear-gradient(324deg, $color-dark 95%, #565682 13%);
+}
+
+.desktop-menu {
+  height: 100vh;
+  position: fixed;
+  background-color: $color-light;
+  transition: 0.90s;
+  .flex-column {
+    height: 100vh;
+  }
+}
+
+// Large Desktop Menu
+
+.desktop-content-menu {
+  @media (min-width: $media-lg) {
+    margin-left: 25%;
+    transition: 0.75s;
+  }
+}
+
+.user-menu-large {
+  @media (min-width: $media-xxxl) {
+    padding-left: 3rem;
+  }
+}
+
+// Small Desktop Menu
+.desktop-content-icon {
+  @media (min-width: $media-lg) {
+    margin-left: 16.5%;
+    transition: 0.75s;
+  }
+}
+
+
+
+
