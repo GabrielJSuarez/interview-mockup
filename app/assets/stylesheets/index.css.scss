@@ -13,29 +13,39 @@ body {
   height: 100vh;
   position: fixed;
   background-color: $date-activity;
+  transition: 0.90s;
   .flex-column {
     height: 100vh;
   }
 }
 
-.desktop-content {
+.desktop-content-icon {
   @media (min-width: 992px) {
-    margin-left: 17%;
+    margin-left: 16.5%;
+    transition: 0.75s;
   }
-  @media (min-width: 1440px) {
+}
+
+.desktop-content-menu {
+  @media (min-width: 992px) {
     margin-left: 25%;
+    transition: 0.75s;
   }
 }
 
 .toggle-button-icon {
-  position: absolute;
+  position: relative;
   z-index: 1000;
-  left: 220px;
-  top: 55px;
+  left: -61px;
+  top: -80px;
   background-color: #212145;
   transform: rotate(-90deg);
   i {
     background-color: #9191af;
+  }
+
+  @media (min-width: 1440px) {
+    left: -50px;
   }
 }
 
@@ -236,7 +246,7 @@ h1 {
   max-width: 500px;
 
   @media (min-width: 992px) {
-    max-width: 250px;
+    max-width: 400px;
   }
 
   @media (min-width: 1024px) {

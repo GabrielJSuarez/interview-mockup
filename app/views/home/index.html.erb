@@ -1,13 +1,10 @@
 <div class="container-fluid px-0">
   <!-- Desktop Menu -->
-  <div id="iconMenu" class="col-xl-2 col-lg-2 d-none d-lg-block d-xl-none px-lg-0 desktop-menu">
-    <button onclick="hideMenu()" class="toggle-button-icon rounded-circle">
-      <i class="fas fa-bars"></i>
-    </button>
+  <div id="iconMenu" class="col-xl-2 col-lg-2 d-none d-lg-block px-lg-0 desktop-menu">
 
     <div class="d-flex flex-column justify-content-between">
       <!-- Menu -->
-      <ul class="list-group user-menu pt-4">
+      <ul class="list-group user-menu pt-3">
         <div class="mx-auto">
           <li class="list-group-item border-0 my-1 menu-selected">
           <a href="#" class="text-decoration-none ps-4 menu-brand d-flex align-items-center">
@@ -85,31 +82,28 @@
   </div>
 
   <!-- Large Desktop Menu -->
-  <div id="fullMenu" class="col-xl-3 col-lg-3 d-none d-xl-block px-lg-0 desktop-menu">
-    <button onclick="hideMenu()" class="toggle-button-menu rounded-circle">
-      <i class="fas fa-bars"></i>
-    </button>
+  <div id="fullMenu" class="col-xl-3 col-lg-3 d-none px-lg-0 desktop-menu">
 
     <div class="d-flex flex-column justify-content-between">
       <!-- Menu -->
-      <ul class="list-group user-menu pt-4">
+      <ul class="list-group user-menu pt-3">
         <li class="list-group-item border-0 d-flex align-items-center my-1 menu-selected">
-          <a href="#" class="text-decoration-none ps-4 menu-brand d-flex align-items-center">
-            <i class="fas fa-th-large pe-4"></i>
+          <a href="#" class="text-decoration-none ps-3 ps-xl-5 menu-brand d-flex align-items-center">
+            <i class="fas fa-th-large pe-3"></i>
             Wallet.<span>on</span>
           </a>
         </li>
 
         <div class="mt-3">
           <li class="list-group-item border-0 d-flex align-items-center my-1 menu-selected">
-            <a href="#" class="text-decoration-none ps-4">
+            <a href="#" class="text-decoration-none ps-3 ps-xl-5">
               <i class="fas fa-th-large pe-4"></i>
               Principal
             </a>
           </li>
 
           <li class="list-group-item border-0 d-flex align-items-center my-1 menu-selected">
-            <a href="#" class="text-decoration-none ps-4">
+            <a href="#" class="text-decoration-none ps-3 ps-xl-5">
               <i class="fas fa-sort-numeric-up pe-4"></i>
               Actividad
             </a>
@@ -119,42 +113,42 @@
           </li>
 
           <li class="list-group-item border-0 d-flex align-items-center my-1 menu-selected">
-            <a href="#" class="text-decoration-none ps-4">
+            <a href="#" class="text-decoration-none ps-3 ps-xl-5">
               <i class="fas fa-wallet pe-4"></i>
               Balances
             </a>
           </li>
 
           <li class="list-group-item border-0 d-flex align-items-center my-1 menu-selected">
-            <a href="#" class="text-decoration-none ps-4">
+            <a href="#" class="text-decoration-none ps-3 ps-xl-5">
               <i class="fas fa-credit-card pe-4"></i>
               Mis Cuentas
             </a>
           </li>
 
           <li class="list-group-item border-0 d-flex align-items-center my-1 menu-selected">
-            <a href="#" class="text-decoration-none ps-4">
+            <a href="#" class="text-decoration-none ps-3 ps-xl-5">
               <i class="fas fa-history pe-4"></i>
               Historial
             </a>
           </li>
 
           <li class="list-group-item border-0 d-flex align-items-center my-1 menu-selected">
-            <a href="#" class="text-decoration-none ps-4">
+            <a href="#" class="text-decoration-none ps-3 ps-xl-5">
               <i class="fas fa-user-secret pe-4"></i>
               Destinatarios
             </a>
           </li>
 
           <li class="list-group-item border-0 d-flex align-items-center my-1 menu-selected">
-            <a href="#" class="text-decoration-none ps-4">
+            <a href="#" class="text-decoration-none ps-3 ps-xl-5">
               <i class="fas fa-envelope-open pe-4"></i>
               Invitar
             </a>
           </li>
 
           <li class="list-group-item border-0 d-flex align-items-center my-1 menu-selected">
-            <a href="#" class="text-decoration-none ps-4">
+            <a href="#" class="text-decoration-none ps-3 ps-xl-5">
               <i class="fas fa-cog pe-4"></i>
               Configuraciòn
             </a>
@@ -181,8 +175,8 @@
     </div>
   </div>
 
-  <div class="col-xl-9 col-lg-10 px-lg-0 desktop-content">
-    <div class="px-xxl-4">
+  <div id="content" class="col-xl-10 col-lg-10 px-lg-0 desktop-content-icon">
+    <div class="px-lg-4">
       <!-- Navigation -->
       <!-- Desktop -->
       <nav class="navbar navbar-expand-lg navbar-light d-none d-lg-block px-xl-0">
@@ -328,9 +322,14 @@
       <div class="container-fluid px-xxl-0">
         <!-- Title and Dropdown Query -->
         <section>
-          <h1 class="py-4 d-md-none">
-            Principal
-          </h1>
+          <div>
+            <h1 class="py-4 d-md-none">
+              Principal
+            </h1>
+            <button onclick="hideMenu()" class="toggle-button-icon rounded-circle d-none d-lg-block">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
 
           <div class="d-md-flex justify-content-between">
             <h3 class="account-title my-3">
@@ -760,8 +759,24 @@
 <script type="text/javascript" charset="utf-8">
     function hideMenu() {
         var icon = document.getElementById("iconMenu");
-        var full = document.getElementById(("fullMenu"))
-        icon.classList.toggle("d-xl-none")
-        full.classList.toggle("d-xl-block");
+        var full = document.getElementById(("fullMenu"));
+        var content = document.getElementById("content");
+        icon.classList.toggle("d-lg-block");
+        full.classList.toggle("d-none");
+        if (content.classList.contains("col-lg-10")) {
+            content.classList.remove("col-lg-10");
+            content.classList.remove("col-xl-10");
+            content.classList.remove("desktop-content-icon");
+            content.classList.add("col-lg-9");
+            content.classList.add("col-xl-9");
+            content.classList.add("desktop-content-menu");
+        } else if (content.classList.contains("col-lg-9")) {
+            content.classList.remove("col-lg-9");
+            content.classList.remove("col-xl-9");
+            content.classList.remove("desktop-content-menu");
+            content.classList.add("col-lg-10");
+            content.classList.add("col-xl-10");
+            content.classList.add("desktop-content-icon");
+        }
     }
 </script>
