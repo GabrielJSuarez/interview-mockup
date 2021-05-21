@@ -11,19 +11,25 @@
 
 # PREVIEW:
 
-![](https://github.com/GabrielJSuarez/ror_capstone/blob/development/app/assets/images/1.png)
+![](https://github.com/GabrielJSuarez/interview-mockup/blob/main/public/1.png)
 
-![](https://github.com/GabrielJSuarez/ror_capstone/blob/development/app/assets/images/2.png)
+![](https://github.com/GabrielJSuarez/interview-mockup/blob/main/public/2.png)
 
-![](https://github.com/GabrielJSuarez/ror_capstone/blob/development/app/assets/images/3.png)
+![](https://github.com/GabrielJSuarez/interview-mockup/blob/main/public/3.png)
 
-![](https://github.com/GabrielJSuarez/ror_capstone/blob/development/app/assets/images/4.png)
+![](https://github.com/GabrielJSuarez/interview-mockup/blob/main/public/4.png)
 
-![](https://github.com/GabrielJSuarez/ror_capstone/blob/development/app/assets/images/5.png)
+![](https://github.com/GabrielJSuarez/interview-mockup/blob/main/public/5.png)
 
-![](https://github.com/GabrielJSuarez/ror_capstone/blob/development/app/assets/images/6.png)
+![](https://github.com/GabrielJSuarez/interview-mockup/blob/main/public/6.png)
 
-![](https://github.com/GabrielJSuarez/ror_capstone/blob/development/app/assets/images/7.png)
+![](https://github.com/GabrielJSuarez/interview-mockup/blob/main/public/7.png)
+
+![](https://github.com/GabrielJSuarez/interview-mockup/blob/main/public/8.png)
+
+![](https://github.com/GabrielJSuarez/interview-mockup/blob/main/public/9.png)
+
+![](https://github.com/GabrielJSuarez/interview-mockup/blob/main/public/10.png)
 
 ## Built With
 
