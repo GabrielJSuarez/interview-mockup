@@ -1,4 +1,4 @@
-# Nova Financiera interview laboratory
+# Nova Financiera interview laboratory.
 
 > Simple HTML/CSS/JS Mockup built as a part of the interview process for the Front End Engineer position in Nova Financiera
 
