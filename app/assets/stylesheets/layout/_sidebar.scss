@@ -4,18 +4,26 @@
 
 .offcanvas-start {
   width: 275px;
+
   @media (min-width: $media-xs) {
     width: 320px;
   }
 }
 
-.offcanvas-body, .list-group-item, .offcanvas-header {
+.offcanvas-body,
+.list-group-item,
+.offcanvas-header {
   background-color: $color-light;
+}
+
+.menu-selected a i {
+  color: #a1a2bc;
 }
 
 .user-menu li a {
   color: $color-tertiary;
   font-size: $font-size-18;
+
   i {
     font-size: 25px;
   }
@@ -28,17 +36,15 @@
   border-top-right-radius: 19.4px;
   border-bottom-right-radius: 19.4px;
   background-color: #eef2f6;
+
   a {
     transition: 0.75s;
     color: $color-primary;
+
     i {
       color: $color-primary;
     }
   }
-}
-
-.menu-selected a i {
-  color: #a1a2bc;
 }
 
 .title-activity {
@@ -60,6 +66,7 @@
   position: fixed;
   background-color: $color-light;
   transition: 0.90s;
+
   .flex-column {
     height: 100vh;
   }
@@ -87,7 +94,3 @@
     transition: 0.75s;
   }
 }
-
-
-
-

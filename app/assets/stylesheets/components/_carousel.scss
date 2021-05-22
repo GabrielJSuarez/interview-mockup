@@ -2,7 +2,7 @@
 
 // ACCOUNTS CARDS
 
-.carousel-indicators [data-bs-target]{
+.carousel-indicators [data-bs-target] {
   width: 7px;
   height: 7px;
   margin: 0 10px 0 0;
@@ -18,6 +18,7 @@
     padding-left: 6rem;
     padding-right: 6rem;
   }
+
   @media (min-width: $media-lg) {
     padding-left: 10rem;
     padding-right: 10rem;
@@ -32,6 +33,7 @@
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
+
   @media (min-width: $media-xxxl) {
     padding-left: 4.5rem;
     padding-right: 4.5rem;
@@ -42,8 +44,9 @@
   @media (min-width: $media-lg) {
     padding-left: 8rem;
   }
+
   @media (min-width: $media-lgx) {
-    padding-left: 0rem;
+    padding-left: 0;
   }
 }
 
@@ -51,12 +54,13 @@
   @media (min-width: $media-lg) {
     padding-right: 8rem;
   }
+
   @media (min-width: $media-lgx) {
-    padding-right: 0rem;
+    padding-right: 0;
   }
 }
 
 .card-icon {
   font-size: 1.7rem;
-  color: #000000;
+  color: #000;
 }

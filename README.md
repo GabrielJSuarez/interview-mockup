@@ -1,4 +1,4 @@
-# Nova Financiera interview laboratory
+# Nova Financiera interview laboratory.
 
 > Simple HTML/CSS/JS Mockup built as a part of the interview process for the Front End Engineer position in Nova Financiera
 
@@ -11,19 +11,25 @@
 
 # PREVIEW:
 
-![](https://github.com/GabrielJSuarez/interview-mockup/blob/check/public/1.png)
+![](https://github.com/GabrielJSuarez/interview-mockup/blob/main/public/1.png)
 
-![](https://github.com/GabrielJSuarez/interview-mockup/blob/check/public/2.png)
+![](https://github.com/GabrielJSuarez/interview-mockup/blob/main/public/2.png)
 
-![](https://github.com/GabrielJSuarez/interview-mockup/blob/check/public/3.png)
+![](https://github.com/GabrielJSuarez/interview-mockup/blob/main/public/3.png)
 
-![](https://github.com/GabrielJSuarez/interview-mockup/blob/check/public/4.png)
+![](https://github.com/GabrielJSuarez/interview-mockup/blob/main/public/4.png)
 
-![](https://github.com/GabrielJSuarez/interview-mockup/blob/check/public/5.png)
+![](https://github.com/GabrielJSuarez/interview-mockup/blob/main/public/5.png)
 
-![](https://github.com/GabrielJSuarez/interview-mockup/blob/check/public/6.png)
+![](https://github.com/GabrielJSuarez/interview-mockup/blob/main/public/6.png)
 
-![](https://github.com/GabrielJSuarez/interview-mockup/blob/check/public/7.png)
+![](https://github.com/GabrielJSuarez/interview-mockup/blob/main/public/7.png)
+
+![](https://github.com/GabrielJSuarez/interview-mockup/blob/main/public/8.png)
+
+![](https://github.com/GabrielJSuarez/interview-mockup/blob/main/public/9.png)
+
+![](https://github.com/GabrielJSuarez/interview-mockup/blob/main/public/10.png)
 
 ## Built With
 

@@ -1,5 +1,4 @@
 @import "abstracts/variables";
-
 @import "abstracts/mixins";
 
 // MOBILE STYLES
@@ -10,15 +9,17 @@
 
 .menu-brand {
   font-size: 1rem;
+
   span {
     color: $color-primary;
   }
 
   @media (min-width: $media-lg) {
-    font-size: 1.2rem!important;
+    font-size: 1.2rem !important;
     font-weight: bolder;
+
     i {
-      font-size: 2rem!important;
+      font-size: 2rem !important;
       color: $color-primary;
     }
   }
@@ -36,7 +37,7 @@
 }
 
 .navbar-icons {
-  color: #ffffff;
+  color: #fff;
   font-size: 27px;
 
   @media (min-width: $media-lg) {
@@ -64,13 +65,14 @@
 
 .add-account {
   img {
-    @include image_preview
+    @include image_preview;
   }
 
   span {
     width: 75px;
     font-size: 19px;
     font-weight: $font-weight-light;
+
     a {
       color: $color-tertiary;
     }
